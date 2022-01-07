@@ -40,8 +40,23 @@ However, do not alter the Item class or Items property as those belong to the go
 
 ## How to Test
 
-1. Do as instructed above up to step 3
-2. Run `npm test`
+To run all tests
+
+```
+npm test
+```
+
+To run all tests in watch mode
+
+```
+npm run test:watch
+```
+
+To generate test coverage report
+
+```
+npm run test:coverage
+```
 
 ## Tech Used
 
