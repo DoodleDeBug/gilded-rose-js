@@ -22,7 +22,7 @@
     "url": "https://github.com/emilybache/GildedRose-Refactoring-Kata/issues"
   },
   "homepage": "https://github.com/emilybache/GildedRose-Refactoring-Kata",
-  "devDependencies": {
-    "jest": "^24.9.0"
+  "dependencies": {
+    "jest": "^27.4.7"
   }
 }
