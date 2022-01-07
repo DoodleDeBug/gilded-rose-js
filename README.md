@@ -49,5 +49,3 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 - Eslint
 
 ## Screenshots
-
-![image](https://user-images.githubusercontent.com/75613073/148241577-1ac93d12-2f60-4af7-9334-8a56d976efbc.png)
