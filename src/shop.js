@@ -1,7 +1,9 @@
 class Shop {
   constructor(items = []) {
+    // default value if no items given is empty array
     this.items = items;
   }
+
   updateQuality() {
     for (let i = 0; i < this.items.length; i++) {
       if (
