@@ -14,7 +14,7 @@ describe("Gilded Rose", function () {
   ];
 
   const gildedRose = new Shop(items);
-  gildedRose.updateQuality();
+  gildedRose.newDay();
 
   it("should have a list of items", function () {
     expect(gildedRose.items).toEqual(items);
@@ -37,7 +37,7 @@ describe("Gilded Rose", function () {
   it("should not decrease quality of items to less than 0", function () {
     const shop1 = new Shop([new Item("+5 Dexterity Vest", 10, 5)]);
     for (let i = 0; i < 10; i++) {
-      shop1.updateQuality();
+      shop1.newDay();
     }
     expect(shop1.items[0].quality).toBe(0);
   });
@@ -52,7 +52,7 @@ describe("Gilded Rose", function () {
 
   it("should increase the quality of brie", function () {
     const shop2 = new Shop([new Item("Aged Brie", 2, 0)]);
-    shop2.updateQuality();
+    shop2.newDay();
     expect(shop2.items[0].quality).toBe(1);
   });
 
@@ -64,7 +64,7 @@ describe("Gilded Rose", function () {
       new Item("Backstage passes to a TAFKAL80ETC concert", 0, 44),
     ]);
 
-    shop3.updateQuality();
+    shop3.newDay();
 
     it("should not increase quality above 50", function () {
       expect(shop3.items[0].sellIn).toBe(14);

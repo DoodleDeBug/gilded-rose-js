@@ -4,6 +4,21 @@ class Shop {
     this.items = items;
   }
 
+  newDay() {
+    this.updateSellIn();
+    this.updateQuality();
+
+    return this.items;
+  }
+
+  updateSellIn() {
+    this.items.forEach((item) => {
+      if (item.name != "Sulfuras, Hand of Ragnaros") {
+        item.sellIn -= 1;
+      }
+    });
+  }
+
   updateQuality() {
     for (let i = 0; i < this.items.length; i++) {
       if (
@@ -34,9 +49,9 @@ class Shop {
           }
         }
       }
-      if (this.items[i].name != "Sulfuras, Hand of Ragnaros") {
-        this.items[i].sellIn = this.items[i].sellIn - 1;
-      }
+      // if (this.items[i].name != "Sulfuras, Hand of Ragnaros") {
+      //   this.items[i].sellIn = this.items[i].sellIn - 1;
+      // }
       if (this.items[i].sellIn < 0) {
         if (this.items[i].name != "Aged Brie") {
           if (
@@ -59,7 +74,7 @@ class Shop {
       }
     }
 
-    return this.items;
+    // return this.items;
   }
 }
 
