@@ -1,1 +1,1 @@
-# gilded-rose-js
+# Gilded Rose Tech Test - JS
